@@ -3,28 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Comandos Git</title>
+    <title>Diccionario Git Interactivo</title>
+    <!-- Importando tipografía moderna de Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Diccionario Git Interactiva</h1>
-        <p>Aprendiendo a trabajar con ramas</p>
+    <div class="background-glow"></div>
+    
+    <header class="hero">
+        <div class="hero-badge">⚡ Version Control Hub</div>
+        <h1>Diccionario Git <span>Interactivo</span></h1>
+        <p>Tu guía visual y moderna para dominar el flujo de trabajo de ramas y repositorios.</p>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Buscar comando Git... (ej. init, clone, commit)">
+        </div>
     </header>
-    <main id="contenedor">
-        <section class="comando">
+
+    <main id="contenedor" class="grid-container">
+        <article class="comando-card">
+            <div class="card-header">
+                <span class="badge">Core</span>
+                <span class="command-icon">🚀</span>
+            </div>
             <h2>git init</h2>
-            <p>Inicializa un nuevo repositorio local en la carpeta actual.</p>
-        </section>
-        <section class="comando">
+            <p>Inicializa un nuevo repositorio local en la carpeta actual transformándola en un proyecto versionado.</p>
+            <div class="card-footer">
+                <code>$ git init</code>
+            </div>
+        </article>
+
+        <article class="comando-card">
+            <div class="card-header">
+                <span class="badge">Remoto</span>
+                <span class="command-icon">🌐</span>
+            </div>
             <h2>git clone</h2>
-            <p>Descarga una copia exacta de un repositorio remoto.</p>
-        </section>
-        <section class="comando">
+            <p>Descarga una copia exacta de un repositorio remoto existente junto con todo su historial de cambios.</p>
+            <div class="card-footer">
+                <code>$ git clone &lt;url&gt;</code>
+            </div>
+        </article>
+
+        <article class="comando-card">
+            <div class="card-header">
+                <span class="badge">Staging</span>
+                <span class="command-icon">📦</span>
+            </div>
             <h2>git add</h2>
-            <p>Prepara los cambios (staging) para ser incluidos en el próximo commit.</p>
-        </section>
+            <p>Prepara y añade los cambios realizados al área de espera (staging) para ser incluidos en el próximo commit.</p>
+            <div class="card-footer">
+                <code>$ git add .</code>
+            </div>
+        </article>
         <!-- Aquí los estudiantes agregarán más comandos luego -->
     </main>
+
+    <footer>
+        <p>Diseñado con pasión para aprender desarrollo de software 💻✨</p>
+    </footer>
 </body>
 </html>
